@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
-
 body {
   font-family: 'Poppins';
 }
@@ -42,4 +41,180 @@ footer {
   background-color: #333;
   color: #ddd;
 }
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: #f9f9f9;
+color: #333;
+}
+
+header {
+display: flex;
+align-items: center;
+padding: 10px 20px;
+}
+
+header img {
+height: 40px;
+margin-right: 10px;
+}
+
+nav {
+display: flex;
+gap: 10px;
+margin-left: auto;
+}
+
+nav button {
+border: none;
+padding: 5px 10px;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+cursor: pointer;
+}
+
+nav .inicio { background-color: #4d4d4d; }
+nav .filme { background-color: #6a1b9a; }
+nav .livro { background-color: #ef6c00; }
+nav .musica { background-color: #c62828; }
+
+section {
+padding: 40px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+section.dark {
+background-color: #2b2b2b;
+color: white;
+}
+
+section.purple {
+background-color: #6a1b9a;
+color: white;
+}
+
+section.orange {
+background-color: #ef6c00;
+color: white;
+}
+
+section.red {
+background-color: #c62828;
+color: white;
+}
+
+.content-box {
+display: flex;
+gap: 30px;
+max-width: 900px;
+align-items: center;
+}
+
+.content-box img {
+width: 250px;
+height: auto;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.content-box p, .content-box h2 {
+max-width: 500px;
+line-height: 1.6;
+}
+
+h2 {
+font-family: 'Georgia', serif;
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.gallery {
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 20px 0;
+}
+
+.gallery img {
+width: 120px;
+height: auto;
+border-radius: 5px;
+}
+
+footer {
+background-color: #1a1a1a;
+color: white;
+padding: 10px 20px;
+text-align: center;
+font-size: 14px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer .social {
+display: flex;
+gap: 10px;
+}
+
+footer .social img {
+width: 20px;
+height: 20px;
+}
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #444;
+color: white;
+border-radius: 5px;
+text-decoration: none;
+margin-top: 20px;
+font-weight: bold;
+}
+
+.button.purple {
+background-color: #6a1b9a;
+}
+
+.button.orange {
+background-color: #ef6c00;
+}
+
+.button.red {
+background-color: #c62828;
+}
+
+.summary {
+margin-top: 30px;
+line-height: 1.8;
+font-size: 16px;
+}
+
+@media (max-width: 768px) {
+.content-box {
+flex-direction: column;
+text-align: center;
+}
+
+.content-box img {
+width: 100%;
+max-width: 300px;
+}
+
+.gallery {
+flex-direction: column;
+align-items: center;
+}
+}
+
 
